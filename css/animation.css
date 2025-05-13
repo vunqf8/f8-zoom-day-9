@@ -1,0 +1,84 @@
+.container {
+  width: 1200px;
+  max-width: 100%;
+  margin: 100px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.dot {
+  position: relative;
+  height: 80px;
+}
+
+.dot::before,
+.dot::after {
+  content: "";
+  width: 20px;
+  height: 20px;
+  aspect-ratio: 1 / 1;
+  display: inline-block;
+  border-radius: 50%;
+  background: #000;
+}
+
+.dot::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  animation: loading-dot-bottom 2s cubic-bezier(0.45, 0.02, 0.65, 1.04) infinite;
+}
+
+.dot::before {
+  animation: loading-dot 2s cubic-bezier(0.45, 0.02, 0.65, 1.04) infinite;
+}
+
+.dot:nth-child(2)::before,
+.dot:nth-child(2)::after {
+  animation-delay: 0.3s;
+}
+.dot:nth-child(3)::before,
+.dot:nth-child(3)::after {
+  animation-delay: 0.5s;
+}
+.dot:nth-child(4)::before,
+.dot:nth-child(4)::after {
+  animation-delay: 0.7s;
+}
+.dot:nth-child(5)::before,
+.dot:nth-child(5)::after {
+  animation-delay: 0.9s;
+}
+.dot:nth-child(6)::before,
+.dot:nth-child(6)::after {
+  animation-delay: 1.2s;
+}
+.dot:nth-child(7)::before,
+.dot:nth-child(7)::after {
+  animation-delay: 1.5s;
+}
+
+@keyframes loading-dot {
+  0% {
+  }
+  50% {
+    scale: 1.2;
+  }
+  100% {
+    translate: 0 60px;
+  }
+}
+
+@keyframes loading-dot-bottom {
+  0% {
+  }
+  50% {
+    opacity: 0;
+    scale: 0.5;
+  }
+  100% {
+    translate: 0 -60px;
+  }
+}
