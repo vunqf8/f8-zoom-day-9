@@ -386,8 +386,27 @@ input[type="number"] {
   height: 500px;
 }
 /* End contact form */
-
 /* End main */
+
+/* Start CSS selector */
+.css-selector-title {
+  width: 100%;
+  font-size: 4rem;
+  padding-top: 50px;
+  text-align: center;
+}
+.css-selector {
+  margin-top: 50px;
+}
+.css-selector img {
+  width: 100%;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+/* End CSS selector */
 
 /* Start footer */
 .footer {
