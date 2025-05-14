@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Table</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/tables.css" />
+    <!-- Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="action">
+        <div class="action__right">
+          <div class="action__search">
+            <span><i class="fa-solid fa-magnifying-glass"></i></span>
+            <input type="text" placeholder="Search by name or ID" />
+          </div>
+          <span class="action__icon"
+            ><i class="fa-solid fa-table-columns"></i
+          ></span>
+          <span class="action__icon">
+            <i class="fa-solid fa-filter"></i>
+          </span>
+          <span class="action__icon status"
+            ><i class="fa-solid fa-check"></i> Active</span
+          >
+          <span class="action__icon status"
+            ><i class="fa-solid fa-check"></i> Not Found</span
+          >
+        </div>
+        <div class="action__left">
+          <img src="./img/img-logo-csv.png" alt="" />
+        </div>
+      </div>
+      <table class="table">
+        <thead>
+          <tr class="table-row">
+            <th class="text-left">Business Listing</th>
+            <th>Start Date</th>
+            <th class="text-left">Vendor ID</th>
+            <th>Status</th>
+            <th class="text-left">Region</th>
+            <th class="text-right">Posts</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="table-row">
+            <td>
+              <div class="user">
+                <div class="user__avatar">
+                  <span class="icon-user"
+                    ><i class="fa-solid fa-user"></i
+                  ></span>
+                  <span class="user__avatar--icon"
+                    ><i class="fa-solid fa-circle-check"></i
+                  ></span>
+                </div>
+                <span class="user__name">Krusty Krab Ltd.</span>
+              </div>
+            </td>
+            <td><time datetime="2015-8-21">8/21/15</time></td>
+            <td class="text-left">785594</td>
+            <td class="text-center"><span class="status">Active</span></td>
+            <td class="text-left">Canada (Central)</td>
+            <td>70</td>
+          </tr>
+          <tr class="table-row">
+            <td>
+              <div class="user">
+                <div class="user__avatar">
+                  <span class="icon-user"
+                    ><img src="./img/img-user-1.avif" alt=""
+                  /></span>
+                  <span class="user__avatar--icon"
+                    ><i class="fa-solid fa-circle-check"></i
+                  ></span>
+                </div>
+                <span class="user__name">NetRangler Inc.</span>
+              </div>
+            </td>
+            <td><time datetime="2016-7-5">5/7/16</time></td>
+            <td class="text-left">558612</td>
+            <td class="text-center"><span class="status">Active</span></td>
+            <td class="text-left">US East (Ohio)</td>
+            <td>41</td>
+          </tr>
+          <tr class="table-row">
+            <td>
+              <div class="user">
+                <div class="user__avatar">
+                  <span class="icon-user"
+                    ><img src="./img/img-user-2.avif" alt=""
+                  /></span>
+                  <span class="user__avatar--icon"
+                    ><i class="fa-solid fa-circle-check"></i
+                  ></span>
+                </div>
+                <span class="user__name">ChumHum Ltd.</span>
+              </div>
+            </td>
+            <td><time datetime="2012-5-19">5/19/12</time></td>
+            <td class="text-left">665137</td>
+            <td class="text-center">
+              <span class="status not-found">Not Found</span>
+            </td>
+            <td class="text-left">EU (Ireland)</td>
+            <td>46</td>
+          </tr>
+          <tr class="table-row">
+            <td>
+              <div class="user">
+                <div class="user__avatar">
+                  <span class="icon-user"
+                    ><img src="./img/img-user-3.avif" alt=""
+                  /></span>
+                  <span class="user__avatar--icon"
+                    ><i class="fa-solid fa-circle-check"></i
+                  ></span>
+                </div>
+                <span class="user__name">Rich Industries Co.</span>
+              </div>
+            </td>
+            <td><time datetime="2014-9-4">9/4/14</time></td>
+            <td class="text-left">520015</td>
+            <td class="text-center"><span class="status">Active</span></td>
+            <td class="text-left">EU (London)</td>
+            <td>15</td>
+          </tr>
+          <tr class="table-row">
+            <td>
+              <div class="user">
+                <div class="user__avatar">
+                  <span class="icon-user"
+                    ><img src="./img/img-user-4.avif" alt=""
+                  /></span>
+                  <span class="user__avatar--icon"
+                    ><i class="fa-solid fa-circle-check"></i
+                  ></span>
+                </div>
+                <span class="user__name">Wayne Indestries Co.</span>
+              </div>
+            </td>
+            <td><time datetime="2014-6-19">6/19/14</time></td>
+            <td class="text-left">204349</td>
+            <td class="text-center">
+              <span class="status not-found">Not Found</span>
+            </td>
+            <td class="text-left">EU (Stockholm)</td>
+            <td>33</td>
+          </tr>
+          <tr class="table-row">
+            <td>
+              <div class="user">
+                <div class="user__avatar">
+                  <span class="icon-user"
+                    ><img src="./img/img-user-5.avif" alt=""
+                  /></span>
+                  <span class="user__avatar--icon"
+                    ><i class="fa-solid fa-circle-check"></i
+                  ></span>
+                </div>
+                <span class="user__name">Bubba Gump Co.</span>
+              </div>
+            </td>
+            <td><time datetime="2016-11-7">11/7/16</time></td>
+            <td class="text-left">487441</td>
+            <td class="text-center"><span class="status">Active</span></td>
+            <td class="text-left">Asia Pacific (Singapore)</td>
+            <td>79</td>
+          </tr>
+          <tr class="table-row">
+            <td>
+              <div class="user">
+                <div class="user__avatar">
+                  <span class="icon-user"
+                    ><i class="fa-solid fa-user"></i
+                  ></span>
+                  <span class="user__avatar--icon"
+                    ><i class="fa-solid fa-circle-check"></i
+                  ></span>
+                </div>
+                <span class="user__name">Krusty Krab Ltd.</span>
+              </div>
+            </td>
+            <td><time datetime="2015-8-21">8/21/15</time></td>
+            <td class="text-left">785594</td>
+            <td class="text-center"><span class="status">Active</span></td>
+            <td class="text-left">Canada (Central)</td>
+            <td>70</td>
+          </tr>
+          <tr class="table-row">
+            <td>
+              <div class="user">
+                <div class="user__avatar">
+                  <span class="icon-user"
+                    ><img src="./img/img-user-1.avif" alt=""
+                  /></span>
+                  <span class="user__avatar--icon"
+                    ><i class="fa-solid fa-circle-check"></i
+                  ></span>
+                </div>
+                <span class="user__name">NetRangler Inc.</span>
+              </div>
+            </td>
+            <td><time datetime="2016-7-5">5/7/16</time></td>
+            <td class="text-left">558612</td>
+            <td class="text-center"><span class="status">Active</span></td>
+            <td class="text-left">US East (Ohio)</td>
+            <td>41</td>
+          </tr>
+          <tr class="table-row">
+            <td>
+              <div class="user">
+                <div class="user__avatar">
+                  <span class="icon-user"
+                    ><img src="./img/img-user-3.avif" alt=""
+                  /></span>
+                  <span class="user__avatar--icon"
+                    ><i class="fa-solid fa-circle-check"></i
+                  ></span>
+                </div>
+                <span class="user__name">Rich Industries Co.</span>
+              </div>
+            </td>
+            <td><time datetime="2014-9-4">9/4/14</time></td>
+            <td class="text-left">520015</td>
+            <td class="text-center"><span class="status">Active</span></td>
+            <td class="text-left">EU (London)</td>
+            <td>15</td>
+          </tr>
+          <tr class="table-row">
+            <td>
+              <div class="user">
+                <div class="user__avatar">
+                  <span class="icon-user"
+                    ><img src="./img/img-user-5.avif" alt=""
+                  /></span>
+                  <span class="user__avatar--icon"
+                    ><i class="fa-solid fa-circle-check"></i
+                  ></span>
+                </div>
+                <span class="user__name">Bubba Gump Co.</span>
+              </div>
+            </td>
+            <td><time datetime="2016-11-7">11/7/16</time></td>
+            <td class="text-left">487441</td>
+            <td class="text-center"><span class="status">Active</span></td>
+            <td class="text-left">Asia Pacific (Singapore)</td>
+            <td>79</td>
+          </tr>
+          <tr class="table-row">
+            <td>
+              <div class="user">
+                <div class="user__avatar">
+                  <span class="icon-user"
+                    ><img src="./img/img-user-5.avif" alt=""
+                  /></span>
+                  <span class="user__avatar--icon"
+                    ><i class="fa-solid fa-circle-check"></i
+                  ></span>
+                </div>
+                <span class="user__name">Bubba Gump Co.</span>
+              </div>
+            </td>
+            <td><time datetime="2016-11-7">11/7/16</time></td>
+            <td class="text-left">487441</td>
+            <td class="text-center"><span class="status">Active</span></td>
+            <td class="text-left">Asia Pacific (Singapore)</td>
+            <td>79</td>
+          </tr>
+          <tr class="table-row">
+            <td>
+              <div class="user">
+                <div class="user__avatar">
+                  <span class="icon-user"
+                    ><i class="fa-solid fa-user"></i
+                  ></span>
+                  <span class="user__avatar--icon"
+                    ><i class="fa-solid fa-circle-check"></i
+                  ></span>
+                </div>
+                <span class="user__name">Krusty Krab Ltd.</span>
+              </div>
+            </td>
+            <td><time datetime="2015-8-21">8/21/15</time></td>
+            <td class="text-left">785594</td>
+            <td class="text-center"><span class="status">Active</span></td>
+            <td class="text-left">Canada (Central)</td>
+            <td>70</td>
+          </tr>
+          <tr class="table-row">
+            <td>
+              <div class="user">
+                <div class="user__avatar">
+                  <span class="icon-user"
+                    ><img src="./img/img-user-1.avif" alt=""
+                  /></span>
+                  <span class="user__avatar--icon"
+                    ><i class="fa-solid fa-circle-check"></i
+                  ></span>
+                </div>
+                <span class="user__name">NetRangler Inc.</span>
+              </div>
+            </td>
+            <td><time datetime="2016-7-5">5/7/16</time></td>
+            <td class="text-left">558612</td>
+            <td class="text-center"><span class="status">Active</span></td>
+            <td class="text-left">US East (Ohio)</td>
+            <td>41</td>
+          </tr>
+          <tr class="table-row">
+            <td>
+              <div class="user">
+                <div class="user__avatar">
+                  <span class="icon-user"
+                    ><img src="./img/img-user-3.avif" alt=""
+                  /></span>
+                  <span class="user__avatar--icon"
+                    ><i class="fa-solid fa-circle-check"></i
+                  ></span>
+                </div>
+                <span class="user__name">Rich Industries Co.</span>
+              </div>
+            </td>
+            <td><time datetime="2014-9-4">9/4/14</time></td>
+            <td class="text-left">520015</td>
+            <td class="text-center"><span class="status">Active</span></td>
+            <td class="text-left">EU (London)</td>
+            <td>15</td>
+          </tr>
+          <tr class="table-row">
+            <td>
+              <div class="user">
+                <div class="user__avatar">
+                  <span class="icon-user"
+                    ><img src="./img/img-user-5.avif" alt=""
+                  /></span>
+                  <span class="user__avatar--icon"
+                    ><i class="fa-solid fa-circle-check"></i
+                  ></span>
+                </div>
+                <span class="user__name">Bubba Gump Co.</span>
+              </div>
+            </td>
+            <td><time datetime="2016-11-7">11/7/16</time></td>
+            <td class="text-left">487441</td>
+            <td class="text-center"><span class="status">Active</span></td>
+            <td class="text-left">Asia Pacific (Singapore)</td>
+            <td>79</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <!-- Pagination -->
+      <div class="pagination">
+        <div class="pagination__select-number">
+          <span>Rows per page</span>
+          <select name="number" id="">
+            <option value="5">5</option>
+            <option value="10">10</option>
+            <option value="15">15</option>
+            <option value="20">20</option>
+          </select>
+        </div>
+        <span class="pagination__data">1 - 20 of 406</span>
+        <div class="pagination__action">
+          <button>
+            <i class="fa-solid fa-angles-left"></i>
+          </button>
+          <button>
+            <i class="fa-solid fa-chevron-left"></i>
+          </button>
+          <button>
+            <i class="fa-solid fa-chevron-right"></i>
+          </button>
+          <button>
+            <i class="fa-solid fa-angles-right"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
